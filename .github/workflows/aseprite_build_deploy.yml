@@ -1,13 +1,7 @@
 name: Build and deploy Aseprite
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
-  push:
-    branches:
-      - master
-      - fix
+  workflow_dispatch
 
 env:
   BUILD_TYPE: Release
